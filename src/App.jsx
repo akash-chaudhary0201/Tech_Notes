@@ -6,6 +6,7 @@ import Home from './Routes/Home';
 import Discussion from './Routes/Discussion';
 import Settings from './Routes/Settings';
 import Department from './Routes/Department';
+import Notes from './Routes/Notes';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/discussion" element={<Discussion />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/department" element={<Department />} />
+          <Route path='/notes' element={<Notes />} />
         </Routes>
       </BrowserRouter>
     </>
