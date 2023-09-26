@@ -11,6 +11,7 @@ import Semester1 from './Routes/Semester1';
 import Semester from './Routes/Semester';
 import Semester3 from './Routes/Semester3';
 import Semester4 from './Routes/Semester4';
+import Login from './Routes/Login';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
             <Route path='semester3' element={<Semester3 />} />
             <Route path='semester4' element={<Semester4 />} />
           </Route>
+          <Route path='/user' element={<Login />} />
         </Routes>
       </BrowserRouter>
     </>

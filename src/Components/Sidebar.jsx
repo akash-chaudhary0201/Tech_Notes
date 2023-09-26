@@ -48,10 +48,11 @@ function Sidebar() {
                         </Offcanvas>
                     </li>
                     <li>
-                        <i class="fa-solid fa-user"></i>
+                        <NavLink className="linkk" to="/user"> <i class="fa-solid fa-user"></i></NavLink>
+
                     </li>
                 </ul>
-            </div>
+            </div >
         </>
     );
 }

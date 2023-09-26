@@ -31,6 +31,7 @@ function Notes() {
                         </div>
                         <div className="notes_right">
                             <div className="outlet">
+
                                 <Outlet />
                             </div>
                         </div>

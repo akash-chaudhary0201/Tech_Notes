@@ -272,6 +272,12 @@
     }
 }
 
+.log_main_container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (max-width: 951px) {
     .home_content h1 {
