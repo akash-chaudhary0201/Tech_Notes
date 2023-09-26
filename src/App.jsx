@@ -12,6 +12,8 @@ import Semester from './Routes/Semester';
 import Semester3 from './Routes/Semester3';
 import Semester4 from './Routes/Semester4';
 import Login from './Routes/Login';
+import PYQs from './Routes/PYQs'
+import VAM from './Routes/VAM'
 
 function App() {
 
@@ -32,6 +34,8 @@ function App() {
             <Route path='semester4' element={<Semester4 />} />
           </Route>
           <Route path='/user' element={<Login />} />
+          <Route path='/pyq' element={<PYQs />} />
+          <Route path='/vam' element={<VAM />} />
         </Routes>
       </BrowserRouter>
     </>

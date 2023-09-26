@@ -195,9 +195,8 @@
 .notes_mainn {
     display: flex;
     gap: 100px;
-
+    margin: 10px;
 }
-
 
 .notes_middle {
     border-right: 10px solid black;
@@ -279,6 +278,74 @@
     justify-content: center;
 }
 
+.vam_main_conatiner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 50px;
+    text-align: center;
+
+}
+
+.vam_subjects {
+    columns: 100px 2;
+    padding: 20px;
+}
+
+.sub_content {
+    padding: 50px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    box-shadow: 1px 10px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sub_content:hover i {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.sub_content {
+    text-align: center;
+}
+
+.sub_content i {
+    font-size: 70px;
+    color: #12486B;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.sub_info {
+    padding: 10px;
+}
+
+.sub_info h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.sub_info button {
+    margin: 10px;
+    border: none;
+    background-color: #12486B;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.notes_right {
+    text-align: center;
+}
+
+
+.subject_names {
+    margin: 22px;
+}
+
 @media screen and (max-width: 951px) {
     .home_content h1 {
         font-size: 40px;
@@ -311,6 +378,26 @@
     .notes_mainn {
         flex-direction: column;
         gap: 30px;
-        margin-top: 300px;
+        margin-top: 200px;
     }
+
+    .vam_subjects {
+        columns: 100px 1;
+        padding: 20px;
+    }
+
+    .vam_content h1 {
+        font-size: 40px;
+    }
+
+
+}
+
+.sbmt-btn {
+    width: 100px;
+    border: none;
+    background-color: #12486B;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
 }

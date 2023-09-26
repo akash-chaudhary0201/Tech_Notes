@@ -3,6 +3,10 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 function Login() {
+
+    const sbmt = (e) => {
+        e.preventDefault();
+    }
     return (
         <>
             <div className="log_main_container">
@@ -10,7 +14,7 @@ function Login() {
                     <h1>
                         Log In
                     </h1>
-                    <Form>
+                    <Form onSubmit={sbmt}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>User Name</Form.Label>
                             <Form.Control type="text" placeholder="Enter your username" />
@@ -25,9 +29,8 @@ function Login() {
                             We'll never share your password with anyone else.
                         </Form.Text> <br /> <br />
 
-                        <Button variant="primary" type="submit">
-                            Log In
-                        </Button>
+                        <input className='sbmt-btn' type="submit" />
+
                     </Form>
                 </div>
 

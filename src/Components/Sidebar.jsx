@@ -32,10 +32,10 @@ function Sidebar() {
                                         <NavLink className="linkk" to="/notes"> <i class="fa-solid fa-clipboard"></i> Notes</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink className="linkk" to="/department"> <i className="fa-solid fa-book"></i> Value Added</NavLink>
+                                        <NavLink className="linkk" to="/vam"> <i className="fa-solid fa-book"></i> Value Added</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink className="linkk" to="/department"> <i class="fa-solid fa-paperclip"></i> PYQs</NavLink>
+                                        <NavLink className="linkk" to="/pyq"> <i class="fa-solid fa-paperclip"></i> PYQs</NavLink>
                                     </li>
                                     <li>
                                         <NavLink className="linkk" to="/discussion"> <i className="fa-solid fa-comments"></i> Discussion</NavLink>
