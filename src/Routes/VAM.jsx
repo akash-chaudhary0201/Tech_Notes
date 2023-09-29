@@ -12,7 +12,7 @@ function VAM() {
                         <div className="vam_subjects">
                             <div className="sub_content">
                                 <div className="sub_icon">
-                                    <i class="fa-brands fa-html5"></i>
+                                    <i className="fa-brands fa-html5"></i>
                                 </div>
                                 <div className="sub_info">
                                     <h2>
@@ -24,7 +24,7 @@ function VAM() {
                             </div>
                             <div className="sub_content">
                                 <div className="sub_icon">
-                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i className="fa-brands fa-css3-alt"></i>
                                 </div>
                                 <div className="sub_info">
                                     <h2>
@@ -36,7 +36,7 @@ function VAM() {
                             </div>
                             <div className="sub_content">
                                 <div className="sub_icon">
-                                    <i class="fa-brands fa-js"></i>
+                                    <i className="fa-brands fa-js"></i>
                                 </div>
                                 <div className="sub_info">
                                     <h2>
@@ -48,7 +48,7 @@ function VAM() {
                             </div>
                             <div className="sub_content">
                                 <div className="sub_icon">
-                                    <i class="fa-brands fa-react"></i>
+                                    <i className="fa-brands fa-react"></i>
                                 </div>
                                 <div className="sub_info">
                                     <h2>
@@ -60,7 +60,7 @@ function VAM() {
                             </div>
                             <div className="sub_content">
                                 <div className="sub_icon">
-                                    <i class="fa-brands fa-python"></i>
+                                    <i className="fa-brands fa-python"></i>
                                 </div>
                                 <div className="sub_info">
                                     <h2>
@@ -72,7 +72,7 @@ function VAM() {
                             </div>
                             <div className="sub_content">
                                 <div className="sub_icon">
-                                    <i class="fa-brands fa-java"></i>
+                                    <i className="fa-brands fa-java"></i>
                                 </div>
                                 <div className="sub_info">
                                     <h2>

@@ -9,35 +9,54 @@ function Home() {
         <div className='home_main_container'>
             <div className="home_content">
                 <h1>
-                    Hey, Welcome to Tech Notes
+                    Hey, Welcome to <span>Tech Notes</span>
                 </h1>
+                <h2>
+                    Empowering <span>MCA Success</span> : Notes, Discussions, Insights
+                </h2>
                 <div className="moving_text">
                     <h2>
 
                     </h2>
                 </div>
                 <div className="btns">
-                    <button class="cta">
-                        <span><NavLink className="linkk" to="/notes"> Notes</NavLink></span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                    <button class="cta">
-                        <span><NavLink className="linkk" to="/vam">VAM</NavLink></span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                    <button class="cta">
-                        <span><NavLink className="linkk" to="/discussion">Discussion</NavLink></span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
+
+                    <NavLink to="/notes"><button className='home_btn'>
+                        <span class="circle1"></span>
+                        <span class="circle2"></span>
+                        <span class="circle3"></span>
+                        <span class="circle4"></span>
+                        <span class="circle5"></span>
+                        <span class="text">Notes</span>
+                    </button></NavLink>
+
+                    <NavLink to="/pyq"><button className='home_btn'>
+                        <span class="circle1"></span>
+                        <span class="circle2"></span>
+                        <span class="circle3"></span>
+                        <span class="circle4"></span>
+                        <span class="circle5"></span>
+                        <span class="text">PYQs</span>
+                    </button></NavLink>
+
+                    <NavLink to="/vam"><button className='home_btn'>
+                        <span class="circle1"></span>
+                        <span class="circle2"></span>
+                        <span class="circle3"></span>
+                        <span class="circle4"></span>
+                        <span class="circle5"></span>
+                        <span class="text">VAM</span>
+                    </button></NavLink>
+
+                    <NavLink to="/discussion"><button className='home_btn'>
+                        <span class="circle1"></span>
+                        <span class="circle2"></span>
+                        <span class="circle3"></span>
+                        <span class="circle4"></span>
+                        <span class="circle5"></span>
+                        <span class="text">Discussion</span>
+                    </button></NavLink>
+
                 </div>
             </div>
         </div>

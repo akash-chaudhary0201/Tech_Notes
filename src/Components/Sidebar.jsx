@@ -29,13 +29,13 @@ function Sidebar() {
                                         <NavLink className="linkk" to="/"> <i className="fa-solid fa-house"></i> Home</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink className="linkk" to="/notes"> <i class="fa-solid fa-clipboard"></i> Notes</NavLink>
+                                        <NavLink className="linkk" to="/notes"> <i className="fa-solid fa-clipboard"></i> Notes</NavLink>
                                     </li>
                                     <li>
                                         <NavLink className="linkk" to="/vam"> <i className="fa-solid fa-book"></i> Value Added</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink className="linkk" to="/pyq"> <i class="fa-solid fa-paperclip"></i> PYQs</NavLink>
+                                        <NavLink className="linkk" to="/pyq"> <i className="fa-solid fa-paperclip"></i> PYQs</NavLink>
                                     </li>
                                     <li>
                                         <NavLink className="linkk" to="/discussion"> <i className="fa-solid fa-comments"></i> Discussion</NavLink>
@@ -48,7 +48,7 @@ function Sidebar() {
                         </Offcanvas>
                     </li>
                     <li>
-                        <NavLink className="linkk" to="/user"> <i class="fa-solid fa-user"></i></NavLink>
+                        <NavLink className="linkk" to="/user"> <i className="fa-solid fa-user"></i></NavLink>
 
                     </li>
                 </ul>
