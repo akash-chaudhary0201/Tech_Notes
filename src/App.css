@@ -58,7 +58,6 @@
 }
 
 .home_main_container {
-    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -454,15 +453,6 @@
     color: #0c66ed;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 951px) {
     .home_content h1 {
