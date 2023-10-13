@@ -15,6 +15,7 @@ import Login from './Routes/Login';
 import PYQs from './Routes/PYQs'
 import VAM from './Routes/VAM'
 import Signup from './Routes/Signup';
+import Team from './Routes/Team';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/pyq' element={<PYQs />} />
           <Route path='/vam' element={<VAM />} />
           <Route path='/signup' element={<Signup />} />
+          <Route path='/team' element={<Team />} />
         </Routes>
       </BrowserRouter>
     </>

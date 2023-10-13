@@ -43,6 +43,9 @@ function Sidebar() {
                                     <li>
                                         <NavLink className="linkk" to="/settings"> <i className="fa-solid fa-gear"></i> Settings</NavLink>
                                     </li>
+                                    <li>
+                                        <NavLink className="linkk" to="/team"> <i class="fa-solid fa-user-plus"></i> Team</NavLink>
+                                    </li>
                                 </ul>
                             </Offcanvas.Body>
                         </Offcanvas>
