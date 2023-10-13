@@ -508,6 +508,14 @@
         font-size: 40px;
     }
 
+    .head_hide {
+        display: none;
+    }
+
+    .home_content h1 {
+        font-size: 60px;
+    }
+
 
 }
 

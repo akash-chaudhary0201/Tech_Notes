@@ -11,7 +11,7 @@ function Home() {
                 <h1>
                     Hey, Welcome to <span>Tech Notes</span>
                 </h1>
-                <h2>
+                <h2 className='head_hide'>
                     Empowering <span>MCA Success</span> : Notes, Discussions, Insights
                 </h2>
                 <div className="moving_text">
