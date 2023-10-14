@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 function Semester1() {
     return (
@@ -9,19 +10,19 @@ function Semester1() {
                 </h1>
                 <div className="subject_names">
                     <button className='sub_btn'>
-                        <span>FCET</span>
+                        <span><NavLink className="sub_name" to="/fcet">  FCET</NavLink></span>
                     </button>
                     <button className='sub_btn'>
-                        <span>C Language</span>
+                        <span> <NavLink className="sub_name" to="/c">  C Language</NavLink></span>
                     </button>
                     <button className='sub_btn'>
-                        <span>PMC</span>
+                        <span><NavLink className="sub_name" to="/pmc">  PMC</NavLink></span>
                     </button>
                     <button className='sub_btn'>
-                        <span>COA</span>
+                        <span><NavLink className="sub_name" to="/coa">  COA</NavLink></span>
                     </button>
                     <button className='sub_btn'>
-                        <span>DM</span>
+                        <span><NavLink className="sub_name" to="/dm">  DM</NavLink></span>
                     </button>
 
                 </div>

@@ -16,6 +16,7 @@ import PYQs from './Routes/PYQs'
 import VAM from './Routes/VAM'
 import Signup from './Routes/Signup';
 import Team from './Routes/Team';
+import FCET from './Routes/Subjects/Semester 1/FCET';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
           <Route path='/vam' element={<VAM />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/team' element={<Team />} />
+          <Route path='fcet' element={<FCET />} />
         </Routes>
       </BrowserRouter>
     </>

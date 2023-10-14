@@ -104,10 +104,13 @@
 }
 
 .notes_main_container {
+    padding: 50px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .button {
     position: relative;
@@ -157,7 +160,7 @@
 .notes_mainn {
     display: flex;
     gap: 100px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .notes_middle {
@@ -588,6 +591,11 @@
     transition: background-color 5s;
 }
 
+.sub_name {
+    text-decoration: none;
+    color: white;
+}
+
 .team_members {
     display: flex;
     justify-content: center;
@@ -627,7 +635,7 @@
     .notes_mainn {
         flex-direction: column;
         gap: 30px;
-        margin-top: 200px;
+        margin-top: 100px;
     }
 
     .vam_subjects {
@@ -649,6 +657,10 @@
 
     .team_members {
         flex-direction: column;
+    }
+
+    .notes_main_container {
+        padding: 0;
     }
 }
 

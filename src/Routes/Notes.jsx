@@ -27,10 +27,11 @@ function Notes() {
                             </div>
                         </div>
                         <div className="notes_middle">
-
                         </div>
                         <div className="notes_right">
+
                             <div className="outlet">
+
                                 <Outlet />
                             </div>
                         </div>
