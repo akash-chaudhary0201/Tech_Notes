@@ -603,6 +603,12 @@
     gap: 20px;
 }
 
+.subject_main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 951px) {
     .home_content h1 {
         font-size: 40px;
