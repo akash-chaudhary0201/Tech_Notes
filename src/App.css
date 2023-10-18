@@ -609,6 +609,11 @@
     align-items: center;
 }
 
+.log__btn {
+    border: none;
+    background: none;
+}
+
 @media screen and (max-width: 951px) {
     .home_content h1 {
         font-size: 40px;

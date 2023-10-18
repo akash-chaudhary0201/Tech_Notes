@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink } from 'react-router-dom';
-
-
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 function Sidebar() {
@@ -10,6 +9,8 @@ function Sidebar() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
     return (
         <>
@@ -50,10 +51,20 @@ function Sidebar() {
                             </Offcanvas.Body>
                         </Offcanvas>
                     </li>
-                    <li>
-                        <NavLink className="linkk" to="/login"> <i className="fa-solid fa-user"></i></NavLink>
+                    {
+                        isAuthenticated ? (
+                            <li>
+                                <button className='log__btn' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                                    <i className="fa-solid fa-house"></i>
+                                </button>
+                            </li>
+                        ) : (
+                            <li>
+                                <button className='log__btn' onClick={() => loginWithRedirect()}><i className="fa-solid fa-user"></i></button>
+                            </li>
+                        )
 
-                    </li>
+                    }
                 </ul>
             </div >
         </>

@@ -10,7 +10,6 @@ function FCET() {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
-                    // Add any other headers if needed
                 }
             });
             const data = await response.json();
@@ -24,21 +23,6 @@ function FCET() {
         fetchData();
     }, []);
 
-    // useEffect(() => {
-    //     fetch('https://kiet-ten.vercel.app/api/getpdfs', {
-    //         method: "GET",
-    //         headers: {
-    //             "Content-Type": "application/json"
-    //         }
-    //     })
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             setPdfLink(data.link); x
-    //         })
-    //         .catch(error => {
-    //             console.error('Error fetching data:', error);
-    //         });
-    // }, []);
 
 
     return (
