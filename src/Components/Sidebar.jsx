@@ -55,7 +55,7 @@ function Sidebar() {
                         isAuthenticated ? (
                             <li>
                                 <button className='log__btn' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-                                    <i className="fa-solid fa-house"></i>
+                                    <i className="fa-solid fa-user"></i>
                                 </button>
                             </li>
                         ) : (
