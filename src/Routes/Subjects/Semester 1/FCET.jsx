@@ -9,10 +9,11 @@ function FCET() {
             const response = await fetch('https://kiet-ten.vercel.app/api/getpdfs', {
                 method: 'GET',
                 headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
+                    'Content-Type': 'application/json',
+                },
+            })
             const data = await response.json();
+            console.log(data);
             setPdfLink(data.link);
         } catch (error) {
             console.error('Error fetching data:', error);

@@ -11,10 +11,8 @@ import Semester1 from './Routes/Semester1';
 import Semester from './Routes/Semester';
 import Semester3 from './Routes/Semester3';
 import Semester4 from './Routes/Semester4';
-// import Login from './Routes/Login';
 import PYQs from './Routes/PYQs'
 import VAM from './Routes/VAM'
-// import Signup from './Routes/Signup';
 import Team from './Routes/Team';
 import FCET from './Routes/Subjects/Semester 1/FCET';
 import { Auth0Provider } from '@auth0/auth0-react';
@@ -45,10 +43,9 @@ function App() {
               <Route path='semester3' element={<Semester3 />} />
               <Route path='semester4' element={<Semester4 />} />
             </Route>
-            {/* <Route path='/login' element={<Login />} /> */}
             <Route path='/pyq' element={<PYQs />} />
+
             <Route path='/vam' element={<VAM />} />
-            {/* <Route path='/signup' element={<Signup />} /> */}
             <Route path='/team' element={<Team />} />
             <Route path='fcet' element={<FCET />} />
           </Routes>
