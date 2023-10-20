@@ -25,29 +25,36 @@ function Sidebar() {
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <ul className='canvas_list'>
-                                    <li>
-                                        <NavLink className="linkk" to="/"> <i className="fa-solid fa-house"></i> Home</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink className="linkk" to="/notes"> <i className="fa-solid fa-clipboard"></i> Notes</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink className="linkk" to="/vam"> <i className="fa-solid fa-book"></i> Value Added</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink className="linkk" to="/pyq"> <i className="fa-solid fa-paperclip"></i> PYQs</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink className="linkk" to="/discussion"> <i className="fa-solid fa-comments"></i> Discussion</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink className="linkk" to="/settings"> <i className="fa-solid fa-gear"></i> Settings</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink className="linkk" to="/team"> <i class="fa-solid fa-user-plus"></i> Team</NavLink>
-                                    </li>
-                                </ul>
+                                {
+                                    isAuthenticated ? (
+                                        <ul className='canvas_list'>
+                                            <li>
+                                                <NavLink className="linkk" to="/"> <i className="fa-solid fa-house"></i> Home</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink className="linkk" to="/notes"> <i className="fa-solid fa-clipboard"></i> Notes</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink className="linkk" to="/vam"> <i className="fa-solid fa-book"></i> Value Added</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink className="linkk" to="/pyq"> <i className="fa-solid fa-paperclip"></i> PYQs</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink className="linkk" to="/discussion"> <i className="fa-solid fa-comments"></i> Discussion</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink className="linkk" to="/settings"> <i className="fa-solid fa-gear"></i> Settings</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink className="linkk" to="/team"> <i class="fa-solid fa-user-plus"></i> Team</NavLink>
+                                            </li>
+                                        </ul>
+                                    ) : (
+                                        <button className='home_log' onClick={() => loginWithRedirect()}>Log In</button>
+                                    )
+                                }
+
                             </Offcanvas.Body>
                         </Offcanvas>
                     </li>
