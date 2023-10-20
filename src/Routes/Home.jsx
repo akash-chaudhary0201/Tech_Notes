@@ -55,9 +55,9 @@ function Home() {
                                 </button></NavLink>
                             </div>
                         ) : (
-                            <li>
-                                <button className='log__btn' onClick={() => loginWithRedirect()}><i className="fa-solid fa-user"></i></button>
-                            </li>
+
+                            <button className='home_log' onClick={() => loginWithRedirect()}>Log In</button>
+
                         )
                     }
 

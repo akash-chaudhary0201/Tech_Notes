@@ -614,6 +614,16 @@
     background: none;
 }
 
+.home_log {
+    border: none;
+    background-color: #0c66ed;
+    padding: 10px;
+    width: 200px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 951px) {
     .home_content h1 {
         font-size: 40px;
