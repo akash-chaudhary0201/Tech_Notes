@@ -2,37 +2,26 @@ import React, { useState, useEffect } from 'react'
 
 function FCET() {
 
-    const [pdfLink, setPdfLink] = useState(null)
-
-    const fetchData = async () => {
-        try {
-            const response = await fetch('https://kiet-ten.vercel.app/api/getpdfs', {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            })
-            const data = await response.json();
-            console.log(data);
-            setPdfLink(data.link);
-        } catch (error) {
-            console.error('Error fetching data:', error);
-        }
-    };
+    const [pdfData, setPdfData] = useState([]);
 
     useEffect(() => {
-        fetchData();
+        fetch('https://kiet-ten.vercel.app/api/getpdfs')
+            .then(response => response.json())
+            .then(data => setPdfData(data))
+            .catch(error => console.error('Error fetching data:', error));
     }, []);
-
-
-
     return (
         <>
             <div className="subject_main_container">
-                <div className="subjects_content">
-                    <button>
-                        <a href={pdfLink} target='_blank'>Syllabus</a>
-                    </button>
+                <div className="subject_content">
+                    {pdfData.map(pdf => (
+                        <div key={pdf._id}>
+                            <h3>{pdf.name}</h3>
+                            <a href={pdf.link} target="_blank" rel="noreferrer">
+                                <button>Open PDF</button>
+                            </a>
+                        </div>
+                    ))}
                 </div>
             </div>
         </>
