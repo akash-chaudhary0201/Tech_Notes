@@ -624,6 +624,41 @@
     margin-top: 20px;
 }
 
+.subject_main_content {
+    text-align: center;
+    color: #12486B;
+}
+
+.subject_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px;
+}
+
+.pdf_item {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #12486B;
+    padding: 20px;
+}
+
+.pdf_item h3 {
+    color: #12486B;
+    font-size: 30px;
+}
+
+.pdf_item button {
+    width: 200px;
+    border: none;
+    background: #12486B;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 951px) {
     .home_content h1 {
         font-size: 40px;
@@ -682,6 +717,11 @@
 
     .notes_main_container {
         padding: 0;
+    }
+
+    .subject_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px;
     }
 }
 
